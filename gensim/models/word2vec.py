@@ -975,7 +975,7 @@ class Word2Vec(utils.SaveLoad):
                 self.syn0[i] = self.seeded_vector(word_str + str(self.seed))
 
         if self.pretrained_model is not None:
-            print 'Set weights using {:,} pretrained vectors of a possible {:,}.'.format(num_pretrained, len(self.vocab))
+            print('Set weights using {:,} pretrained vectors of a possible {:,}.'.format(num_pretrained, len(self.vocab)))
                 
         if self.hs:
             self.syn1 = zeros((len(self.vocab), self.layer1_size), dtype=REAL)
